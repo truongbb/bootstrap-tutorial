@@ -11,25 +11,27 @@
     - `Tính tương thích của trình duyệt`: Bootstrap 4 tương thích với tất cả các trình duyệt hiện đại (Chrome, IE, Safari,...)
 - **Có 2 cách để bắt đầu sử dụng Bootstrap 4:**
     - Cách 1: Bao gồm Bootstrap 4 từ một `CDN (Content Delivery Network: Mạng phân phối nội dung)`. Với cách này, chúng ta không phải tải và lưu trữ Bootstrap 4, chỉ cần bao gồm jQuery trong mã lệnh của chúng ta như sau:
-    ```html
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        ```html
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-    <!-- Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    ```
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        ```
     - Cách 2: Download Bootstrap 4: tham khảo hướng dẫn tại [Downloading Bootstrap Instructions](https://getbootstrap.com/)
 
 # 2. Tạo trang web đầu tiên với bootstrap 4
 ## 2.1. Thêm loại tài liệu HTML5
 - Bootstrap 4 sử dụng HTML và CSS được yêu cầu trong loại tài liệu HTML5.
 - `Luôn` bao gồm đoạn mã sau khi bắt đầu trang:
+
     ```html
     <!DOCTYPE html> <!--HTML5 doctype-->
     <html lang="en"> <!--Thuộc tính lang-->
@@ -40,6 +42,7 @@
     ```
 ## 2.2. Bootstrap 4 ưu tiên thiết bị di động
 - Để đảm bảo hiển thị chính xác và thu phóng cảm ứng, hãy thêm thẻ `<meta>` sau vào bên trong phần tử `<head>`:
+
     ```html
     <meta name="viewport" content="width=device-width, initial-scale=1">
     ```
@@ -52,7 +55,9 @@
     <p align="center">
     <img width=400 src="../images/lesson1/max-width-container.png">
     </p>
-    - `.container-fluid`: cung cấp một phần tử chứa có chiều rộng bằng tổng chiều rộng của khung nhìn trình duyệt. Chiều rộng tối đa của nó (`max-width`) luôn bằng 100%
+
+    - `.container-fluid`: cung cấp một phần tử chứa có chiều rộng bằng tổng chiều rộng của khung nhìn trình duyệt. Chiều rộng tối đa của nó (`max-width`) luôn bằng 100%  
+
 VD:
 - `Class .container`
     ```html
@@ -211,6 +216,7 @@ VD:
 - Kiểu chữ mặc định font-family: `"Helvetica Neue", Helevetica, Aria, sans-serif`.
 - Hơn nữa, tất cả phần tử `<p>` có `margin-top: 0` và `margin-bottom: 1rem (16px)`
 - Bootstrap 4 định kiểu style của các thẻ tiêu đề HTML (`<h1>` đến `<h6>`) với độ dày phông chữ đậm hơn và kích thước phông chữ tăng lên.  
+
     VD:
     ```html
     <div class="container">
@@ -228,6 +234,7 @@ VD:
 
 ## 4.2 Các thẻ tiêu đề hiển thị
 - Các tiêu đề hiển thị được sử dụng để nổi bật hơn so với tiêu đề thông thường (cỡ chữ lớn hơn và độ dày của phông chữ nhẹ hơn) và có bốn loại để chọn: `.display-1, .display-2, .display-3, .display- 4.`  
+
     VD:
     ```html
     <div class="container">
@@ -242,8 +249,9 @@ VD:
 <img width = 400 src="../images/lesson1/display_heading.png">
 </p>
 
-## 4.3. Phần tử <small>
+## 4.3. Phần tử `<small>`
 - Trong Bootstrap 4, phần tử `<small>` được sử dụng để tạo một văn bản phụ, nhẹ hơn trong bất kỳ tiêu đề nào.  
+
     VD:
     ```html
     <div class="container">
@@ -260,8 +268,9 @@ VD:
 <img width = 400 src="../images/lesson1/small_elements.png">
 </p>
 
-## 4.4. Phần tử <abbr>
+## 4.4. Phần tử `<abbr>`
 - Bootstrap 4 sẽ định kiểu style cho phần tử `<abbr>` bằng đường viền bên dưới là những chấm tròn  
+
     VD:
     ```html
     <div class="container">
@@ -274,9 +283,10 @@ VD:
 <img width = 400 src="../images/lesson1/abbr_element.png">
 </p>
 
-## 4.5. Phần tử <blockquote>
+## 4.5. Phần tử `<blockquote>`
 - Thêm lớp `.blockquote` tới phần tử `<blockquote>` khi trích dẫn những khối nội dung từ một nguồn khác.
 - Thêm lớp `.blockquote-footer` tới phần tử `<footer>` khi trích dẫn tên nguồn  
+
     VD:
     ```html
     <div class="container">
@@ -306,6 +316,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 ## 5.1. Text Colors
 - Bootstrap 4 có 1 số lớp theo ngữ cảnh có thể được sử dụng để cung cấp "ý nghĩa thông qua màu sắc"
 - Các lớp cho màu văn bản là: `.text-muted, .text-primary, .text-success, .text-info, .text-warning, .text-danger, .text-secondary, .text-white, .text- dark, .text-body (mặc định thường là màu đen) và .text-light`  
+
     VD:
     ```html
     <div class="container">
@@ -329,6 +340,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 </p>
 
 - Các lớp văn bản theo ngữ cảnh cũng có thể được sử dụng trên các liên kết, điều này sẽ làm cho màu tối hơn khi di chuột vào.  
+
     VD:
     ```html
     <div class="container">
@@ -346,6 +358,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 </p>
 
 - Chúng ta cũng có thể thêm độ trong suốt 50% cho màu văn bản trắng hoặc đen với lớp `.text-black-50 và .text-white-50`.  
+
     VD:
     ```html
     <div class="container">
@@ -361,6 +374,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 ## 5.2. Background Colors
 - Các lớp cho màu nền là: `.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark và .bg-light`.
 - *Chú ý*: màu nền không đặt màu văn bản, vì vậy trong một số trường hợp, chúng sẽ muốn sử dụng màu nền cùng với một lớp `.text-*`  
+
     VD:
     ```html
     <div class="container">
@@ -384,6 +398,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 ## 6.1. Bootstrap 4 Basic Table
 - Một bảng bootstrap 4 cơ bản có một phần padding nhẹ và chia ngang.
 - Sử dụng lớp `.table` để thêm những định kiểu cơ bản cho một bảng bootstrap  
+
     VD:
     ```html
     <div class="container">
@@ -422,6 +437,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 
 ## 6.2. Striped Rows
 - Lớp `.table-striped` được thêm vào để tạo các dòng có sọc xen kẽ trong 1 bảng   
+
     VD:
     ```html
     <div class="container">
@@ -461,6 +477,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 
 ## 6.3. Bordered Table
 - Lớp `.table-bordered` sẽ thêm các đường viền cho tất cả các cạnh của bảng và ô trong bảng  
+
     VD:
     ```html
     <table class="table table-bordered">
@@ -496,6 +513,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 
 ## 6.4. Hover Rows
 - Lớp `.table-hover` thêm một hiệu ứng di chuột (dòng được di chuột vào sẽ có màu nền là màu xám).  
+
     VD:
     ```html
     <table class="table table-hover">
@@ -531,6 +549,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 
 ## 6.5. Black/Dark Table
 - Lớp `.table-dark` sẽ thêm một màu nền đen cho bảng.  
+
     VD:
     ```html
     <table class="table table-dark">
@@ -566,6 +585,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 
 ## 6.6. Borderless table
 - Lớp `.table-borderless` được thêm vào để xóa bỏ đường viền của bảng  
+
     VD:
     ```html
     <table class="table table-borderless">
@@ -601,6 +621,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 
 ## 6.7. Contextual Classes
 - Các lớp theo ngữ cảnh có thể được sử dụng để thiết lập màu sắc cho cả bảng (`<table>`), cho các dòng (`<tr>`) hoặc các ô (`<td>`) trong bảng.  
+
     VD:
     ```html
     <table class="table">
@@ -641,6 +662,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 
 ## 6.8. Responsive Tables
 - Lớp `.table-responsive` được thêm vào để trình duyệt tạo một thanh cuộn ngang cho bảng khi cần thiết (khi bảng có kích thước chiều rộng quá lớn)  
+
     VD:
     ```html
     <div class="table-responsive">
@@ -699,10 +721,10 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 </p>
 
 - Chúng ta cũng có thể quyết định khi nào bảng sẽ thêm một thanh cuộn ngang, tùy thuộc vào chiều rộng của màn hình bằng 1 trong các lớp `table-responsive` sau:
-    - `.table-responsive-sm`: - chiều rộng màn hình < 576px
-    - `.table-responsive-md`: - chiều rộng màn hình < 768px
-    - `.table-responsive-lg`: - chiều rộng màn hình < 992px
-    - `.table-responsive-xl`: - chiều rộng màn hình < 1200px
+    - `.table-responsive-sm`: chiều rộng màn hình < 576px
+    - `.table-responsive-md`: chiều rộng màn hình < 768px
+    - `.table-responsive-lg`: chiều rộng màn hình < 992px
+    - `.table-responsive-xl`: chiều rộng màn hình < 1200px
 ## 6.9. Một số lớp table khác trong Bootstrap 4
 - `.thead-dark`: thêm 1 màu nền đen tới các ô tiêu đề của bảng.
 - `.thead-light`: thêm 1 màu nền xám tới các ô tiêu đề của bảng.
@@ -721,6 +743,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 - Các lớp form-control trong dạng bố cục này được xếp chồng lên nhau với các nhãn `left-aligned` ở góc trên cùng.
 - Với loại bố cục này, các phần tử đều sử dụng lớp `.form-control`, sẽ có chiều rộng là 100%
 - Thêm một phần tử bao bọc với lớp `.form-group`, xung quanh mỗi điều khiển biểu mẫu, để đảm bảo margin phù hợp:  
+
     VD:
     ```html
     <form action="/action_page.php">
@@ -748,6 +771,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 - Bố cục biểu mẫu nội tuyến là tất cả các phần tử trong biểu mẫu được hiển thị trên cùng 1 hàng, và được căn trái `left-aligned`.
 - *Lưu ý:* bố cục này chỉ áp dụng cho khung nhìn có chiều rộng tối thiểu là 576px. Nếu màn hình nhỏ hơn, các phần tử sẽ xếp chồng lên nhau theo chiều ngang.
 - Để tạo bố cục biểu mẫu nội tuyến chỉ cần thêm lớp `.form-inline` vào phần tử `<form>`  
+
     VD:
     ```html
     <form class="form-inline" action="/action_page.php">
@@ -771,6 +795,7 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 - Ở ví dụ trên, các phần tử trong biểu mẫu hiển thị liền sát nhau, để cho bố cục đẹp mắt hơn chúng ta sẽ sử dụng thêm các tiện ích khoảng cách của bootstrap 4.
 - Ở ví dụ trên, chúng ta thêm một margin phải cho các phần tử input trong biểu mẫu với lớp `.mr-sm-2`, (sm chỉ định được áp dụng trên tất cả các thiết bị nhỏ và lớn).
 - Thêm một margin dưới với lớp `.mb-2` để định kiểu cho các trường input khi nó bị ngắt xuống dòng (do không đủ kích thước chiều rộng).  
+
     VD:
     ```html
     <form class="form-inline" action="/action_page.php">
@@ -815,7 +840,8 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 - Thêm lớp `.was-validated` hoặc `.needs-validated` tới phần tử `<form>` tùy thuộc vào chúng ta muốn cung cấp phản hồi tới người dùng trước hay sau khi nộp biểu mẫu
 - Các trường input sẽ có đường viền màu xanh lá (hợp lệ) hoặc màu đỏ (không hợp lệ) để chỉ ra cái gì đang bị thiếu trong biểu mẫu.
 - Chúng ta cũng có thể thêm một thông điệp với lớp `.valid-feedback` hoặc `.invalid-feedback` để thông báo rõ ràng cho người dùng biết cái gì đang bị thiếu hoặc cần phải hoàn thiện trước khi thực hiện nộp biểu mẫu.  
-VD: Sử dụng lớp `.was-validated` để thông báo xác thực trước khi nộp biểu mẫu.
+
+    VD: Sử dụng lớp `.was-validated` để thông báo xác thực trước khi nộp biểu mẫu.
     ```html
     <form action="/action_page.php" class="was-validated">
     <div class="form-group">
@@ -847,6 +873,7 @@ VD: Sử dụng lớp `.was-validated` để thông báo xác thực trước kh
 # 8. Bootstrap 4 Buttons
 ## 8.1. Button Styles
 - Bootstrap 4 cung cấp các loại button khác nhau như `.btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .btn-dark, .btn-light`  
+
     VD:
     ```html
     <div class="container">
@@ -868,6 +895,7 @@ VD: Sử dụng lớp `.was-validated` để thông báo xác thực trước kh
 </p>
 
 - Lớp button cũng có thể được sử dụng như một phần tử liên kết `<a>`, `<input>`  
+
     VD:
     ```html
     <a href="#" class="btn btn-info" role="button">Link Button</a>
@@ -880,6 +908,7 @@ VD: Sử dụng lớp `.was-validated` để thông báo xác thực trước kh
 
 ## 8.2. Button outline
 - Chúng ta cũng có thể tạo ra các button chỉ có viền màu bao bên ngoài bằng cách sử dụng các lớp `.btn-outline-xxx`, với `xxx` là tên các nút button theo màu sắc: `primary, secondary, success,...`  
+
     VD:
     ```html
     <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -918,6 +947,7 @@ VD: Sử dụng lớp `.was-validated` để thông báo xác thực trước kh
 
 ## 8.4. Block level buttons
 - Thêm lớp `.btn-block` để tạo một button theo mức khối - button này sẽ có chiều rộng trải dài theo kích thước của phần tử cha.  
+
     VD:
     ```html
     <h2>Block Level Buttons</h2>  
@@ -934,6 +964,7 @@ VD: Sử dụng lớp `.was-validated` để thông báo xác thực trước kh
 
 ## 8.5. Active/Disable Button
 - Một button có thể được thiết lập trạng thái kích hoạt (có thể nhấn được) hoặc bị vô hiệu hóa (không thế nhấn được) bằng cách thêm lớp `.active` hoặc thuộc tính `disabled`.  
+
     VD:
     ```html
     <button type="button" class="btn btn-primary active">Active Primary</button>
@@ -943,8 +974,9 @@ VD: Sử dụng lớp `.was-validated` để thông báo xác thực trước kh
     <img width = 400 src="../images/lesson1/active_disable_button.png">
     </p>
 
-- Lưu ý: Phần tử liên kết `<a>` không hỗ trợ thuộc tính disabled, do đó nếu muốn phần tử liên kết này như một button bị vô hiệu hóa thì sử dụng lớp .disabled thêm vào phần tử `<a>`
-VD:
+- Lưu ý: Phần tử liên kết `<a>` không hỗ trợ thuộc tính disabled, do đó nếu muốn phần tử liên kết này như một button bị vô hiệu hóa thì sử dụng lớp .disabled thêm vào phần tử `<a>`  
+
+    VD:
     ```html
     <a href="#" class="btn btn-primary disabled">Disabled Link</a>
     ```
@@ -954,6 +986,7 @@ VD:
 
 ## 8.6. Spinner Buttons
 - Chúng ta cũng có thể thêm 'spinners' cho một button như ví dụ sau:
+
     ```html
     <button class="btn btn-primary">
     <span class="spinner-border spinner-border-sm"></span>
@@ -1106,7 +1139,8 @@ VD:
 
 ## 10.8. Float và Clearfix
 - Di chuyển một phần tử sang phải với lớp `.float-right` hoặc sang trái với `.float-left` và xóa các phần tử nổi với lớp `.clearfix`:  
-VD:
+
+    VD:
     ```html
     <div class="clearfix">
         <span class="float-left">Float left</span>
@@ -1163,6 +1197,7 @@ VD:
 </p>
 
 - `height`
+
     ```html
     <div class="container">
     <h1>Height Utilities</h1>
@@ -1196,6 +1231,6 @@ VD:
 </p>
 
 ## 10.14. Block Elements
-- Sử dụng lớp `.d-block` để chuyển một phần tử thành 1 phần tử khối. Sử dụng bất ký lớp `.d-*-block` nào để điều khiển 1 phần tử thành 1 phần tử khối trên kích thước màn hình cụ thể
+- Sử dụng lớp `.d-block` để chuyển một phần tử thành 1 phần tử khối. Sử dụng bất ký lớp `.d-*-block` nào để điều khiển 1 phần tử thành 1 phần tử khối trên kích thước màn hình cụ thể.
 
 
