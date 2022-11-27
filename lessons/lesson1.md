@@ -1246,3 +1246,4 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 - Sử dụng lớp `.d-block` để chuyển một phần tử thành 1 phần tử khối. Sử dụng bất ký lớp `.d-*-block` nào để điều khiển 1 phần tử thành 1 phần tử khối trên kích thước màn hình cụ thể.
 
 # Summary
+Qua bài học ngày hôm nay, chúng ta đã bước đầu làm quen với Bootstrap - một framework nổi tiếng và phổ biến bậc nhất của CSS. Ngoài ra, chúng ta hiểu về cơ chế chia lưới của bootstrap cũng như áp dụng cơ chế này để xây dựng một trang web hiển thị tốt trên các kích cỡ màn hinh khác nhau. Tiếp đến, chúng ta đã biết cách sử dụng class của bootstrap để style cho chữ, màu sắc, bảng biểu, form, nút bấm và ảnh.
