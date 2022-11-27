@@ -1338,3 +1338,4 @@ VD: `.d-*-flex, .flex-*-row-reverse, .justify-content-*-end, .flex-*-grow-1,` ..
 Chúng ta có thể tham khảo thêm các ví dụ về filter tại [Bootstrap Filter Example](https://www.w3schools.com/bootstrap4/bootstrap_filters.asp)
 
 # Summary
+Nội dung bài học của buổi này bao gồm các kiến thức để xây dựng các thành phần của website như modal, tooltip, carousel, ... Ngoài ra, cách thức thể hiện flexbox của CSS cũng được bootstrap hỗ trợ một cách suất sắc và dễ sử dụng.
