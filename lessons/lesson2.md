@@ -1862,3 +1862,4 @@ VD:
 </p>
 
 # Summary
+Chúng ta đã đi hiểm hiểu về các cách xử lý một số thành phần cơ bản của website sử dụng bootstrap như Dropdown, Button group, thanh tiến trình, phân trang, các thẻ hoặc thanh điều hướng (navigation bar). Đó chính là các ứng dụng tiêu biểu của bootstrap trong việc xây dựng trang web mang phong cách hiện đại và đáp ứng tốt các kích cỡ màn hình khác nhau (responsive web).
