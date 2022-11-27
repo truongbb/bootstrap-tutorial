@@ -1,4 +1,15 @@
 # Bootstrap 4 tutorial
+# 0. Content
+1. Giới thiệu bootstrap
+2. Tạo trang web đầu tiên với bootstrap 4
+3. Bootstrap 4 Grids
+4. Bootstrap 4 Typography
+5. Bootstrap 4 Colors
+6. Bootstrap 4 Tables
+7. Bootstrap 4 Forms
+8. Bootstrap 4 Buttons
+9. Bootstrap 4 Images
+10. Bootstrap Helper Classes
 # 1. Giới thiệu bootstrap
 - Bootstrap là một nền tảng giao diện người dùng (front-end) miễn phi cho việc phát triển web trở nên nhanh chóng và dễ dàng hơn.
 - Bootstrap bao gồm các mẫu thiết kế dựa trên HTML và CSS cho kiểu chữ, biểu mẫu, nút, bảng, điều hướng, phương thức, hình ảnh và nhiều thứ khác, cũng như các plugin JavaScript tùy chọn.
@@ -58,7 +69,7 @@
 
     - `.container-fluid`: cung cấp một phần tử chứa có chiều rộng bằng tổng chiều rộng của khung nhìn trình duyệt. Chiều rộng tối đa của nó (`max-width`) luôn bằng 100%  
 
-VD:
+    VD:
 - `Class .container`
     ```html
     <!DOCTYPE html>
@@ -138,11 +149,12 @@ VD:
 # 3. Bootstrap 4 Grids
 ## 3.1. Grid System
 - `Grid system` (hệ thống dạng lưới) được xây dựng với `flexbox` và cho phép có đến 12 cột trên trang.
- - Chúng ta có thể nhóm các cột lại với nhau để tạo ra các cột rộng hơn. VD:
+ - Chúng ta có thể nhóm các cột lại với nhau để tạo ra các cột rộng hơn.   
+ VD:
+<p align="center">
+<img width=400 src="../images/lesson1/grid-columns.png">
+</p>
 
-    <p align="center">
-    <img width=400 src="../images/lesson1/grid-columns.png">
-    </p>
 - `Grid system` có tính linh hoạt, và các cột có thể thay đổi 1 cách tự động phụ thuộc vào kích thước của màn hình.
 - Đảm bảo rằng tổng số cột cộng lại là ít hơn hoặc bằng 12.
 
@@ -1233,4 +1245,4 @@ Có thể tham khảo thêm các lớp Typogrraphy tại [More Typography Classe
 ## 10.14. Block Elements
 - Sử dụng lớp `.d-block` để chuyển một phần tử thành 1 phần tử khối. Sử dụng bất ký lớp `.d-*-block` nào để điều khiển 1 phần tử thành 1 phần tử khối trên kích thước màn hình cụ thể.
 
-
+# Summary
